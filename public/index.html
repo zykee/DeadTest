@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+	<title>zykee's movie</title>
+	<meta charset="utf-8">
+	<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<script type="text/javascript" src="../js/layer/layer.js"></script>
+	<script type="text/javascript" src="../js/main.js"></script>
+	<style type="text/css">
+		/*侧边栏*/
+		#left-col{
+			position:absolute;
+			top: 100px;
+			left: 10%;
+			width: 15%;
+			padding: 15px;
+			line-height: 15px;
+			border-radius: 5px;
+			box-shadow: 10px 10px 5px #888888;
+		}
+		#left-col li{
+			list-style: none;/*清除项目列表符号*/
+			padding: 6px 0 10px 0;/*上左下右 增加上下空隙*/
+		}
+		/*右边*/
+		.right-content{
+			position:absolute;
+			top: 100px;
+			left: 32%;
+			width: 60%;
+			height: 1000px;
+		}
+		.thumbnail{
+			box-shadow: 10px 10px 5px #888888;
+			padding: 10px !important;
+			line-height: 1 !important;
+		}
+		.img-movie{
+			height: 200px !important;
+		}
+		/*右下角的detail*/
+		.point{
+	    	text-align: right;
+	    	box-sizing: border-box;
+	    	margin-bottom: -16px;
+		}
+		.point span{
+	    	cursor: pointer;
+		}
+		.point a{
+	    	text-decoration: none;
+	    	color: black;
+		}
+		/*超出部分隐藏*/
+		.overhide{
+			text-overflow:ellipsis;
+			width:150px; 
+         	overflow:hidden;          /*超出部分隐藏*/
+	       	white-space:nowrap
+		}
+
+		@media (min-width: 768px)
+		.bs-docs-footer {
+    		text-align: left;
+		}
+
+		.bs-docs-footer {
+		    padding-top: 50px;
+    		padding-bottom: 50px;
+    		margin-top: 1000px;
+    		color: #99979c;
+    		text-align: center;
+    		background-color: #2a2730;
+		}
+	</style>
+</head>
+<body>
+	<!-- 顶部栏 -->
+	<header class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/">
+					<span>Zykee | Movie</span>
+				</a>
+			</div>
+			<div class="navbar-right">
+				<form class="navbar-form navbar-left" role="search">
+  					<div class="form-group">
+    					<input id="search_input" type="text" class="form-control" placeholder="Search">
+  					</div>
+  					<button id="search_btn" type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+				</form>
+			</div>
+		</div>
+	</header>
+	<!-- 侧边栏 -->
+	<div id="left-col">
+		<div>
+			<h4 class="classify"><span>电影分类</span></h3>
+			<ul id='sidebar' class="nav nav-pills nav-stacked">
+<!-- 				<li class="active"><a href="#">全部</a></li>
+				<li><a href="#">战争</a></li>
+				<li><a href="#">爱情</a></li>
+				<li><a href="#">亲情</a></li>
+				<li><a href="#">友情</a></li>
+				<li><a href="#">基情</a></li>
+				<li><a href="#">色情</a></li>
+			</ul> -->
+		</div>
+	</div>
+	<!-- 右边内容 -->
+	<div class="right-content">
+		<!-- 影片 -->
+		<div id="movies" class="row">
+<!-- 		<div class="col-md-3 col-sm-6">
+				<div href="#" class="thumbnail">
+					<img class="img-movie" src="https://img3.doubanio.com/view/movie_poster_cover/spst/public/p692813374.jpg" alt="coco">
+					<div class="caption">
+        				<h3>大鱼</h3>
+        				<p>评分：<span>8.7</span></p>
+        				<p><span class="label label-success">剧情</span>
+        				<span class="label label-success">家庭</span>
+        				<span class="label label-success">奇幻</span></p>
+        				<p class="point"><a href="./detail?title=${item.title}">DETAIL<span class="glyphicon glyphicon-menu-right"></span></a></p>
+        			</div>
+				</div>
+			</div> -->
+		</div>
+		<!-- 分页 -->
+		<nav id="page" aria-label="...">
+  			<ul class="pager">
+    			<!-- <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+    			<li><span>当前页：1/8</span></li>
+    			<li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li> -->
+  			</ul>
+		</nav>
+	</div>
+	<!-- footer -->
+	<footer class="bs-docs-footer">
+  		<div class="container">
+    		<p><a href="https://github.com/zykee/DeadTest"><span class="glyphicon glyphicon-user"></span> Zykee | Movie</a></p>
+    		<p>Built with the movies in <a href="https://movie.douban.com/top250" target="_blank">@douban</a>. Designed by the <a href="https://github.com/zykee">Zykee</a> with the help of <a href="http://v3.bootcss.com/components/">Bootstrap</a> and <a href="http://layer.layui.com/">Layui</a>.</p>
+
+    		<p>本项目源码受 MIT 开源协议保护，文档受 <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a> 开源协议保护。</p>
+		 </div>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DATAILS</title>
+	<meta charset="utf-8">
+	<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<script type="text/javascript" src="../js/detail.js"></script>
+	<style type="text/css">
+		.test{
+			width: 100%;
+			padding: 19px 0px 19px 27px;
+			border-radius:5px;
+			box-shadow: 10px 10px 5px #888888;
+		}
+		.img-test{
+			width: 60%;
+			box-shadow: 10px 10px 5px #888888;
+		}
+		.img-tt{
+			margin-right: -6% !important;
+		}
+		h1{
+			word-wrap: break-word;
+    		display: block;
+    		font-size: 26px;
+    		font-weight: bold;
+   			color: #494949;
+    		margin: 0;
+    		padding: 0 0 15px 0;
+   			line-height: 1.1;
+		}
+		h1 .year{
+			display: inline-block;
+    		zoom: 1;
+    		color: #888;
+		}
+		.test p{
+			font-size:20px;
+		}
+		/*----------footer-------------*/
+		@media (min-width: 768px)
+		.bs-docs-footer {
+    		text-align: left;
+		}
+
+		.bs-docs-footer {
+    		padding-top: 50px;
+    		padding-bottom: 50px;
+    		margin-top: 207px;
+    		color: #99979c;
+    		text-align: center;
+    		background-color: #2a2730;
+		}
+	</style>
+</head>
+<body>
+	<!-- 顶部栏 -->
+	<header class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/">
+					<span>Zykee | Movie</span>
+				</a>
+			</div>
+			<div class="navbar-right">
+				<form class="navbar-form navbar-left" role="search">
+  					<div class="form-group">
+    					<input id="search_input" type="text" class="form-control" placeholder="Search">
+  					</div>
+  					<a id="search_btn" type="submit" class="btn btn-default" href="/"><span class="glyphicon glyphicon-search"></span></a>
+				</form>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+	<!-- 详情 -->
+		<div id="detail" class="row">
+			<!-- <h1>
+				<span>大鱼 BIG FISH</span>
+				<span class="year">(2003)</span>
+			</h1>
+			<div class="col-md-3 img-tt">
+				<img class="img-test img-thumbnail" src="https://img3.doubanio.com/view/movie_poster_cover/spst/public/p692813374.jpg">
+			</div>
+			<div class="col-md-9">
+				<div class="test bg-success">
+					<p class="text-success">导演：提姆.波顿</p>
+					<p class="text-success">评分：8.7</p>
+					<p class="text-success">主演：伊万·麦克格雷格/阿尔伯特·芬尼/比利·克鲁德普</p>
+					<p class="text-success">类型：剧情/家庭/奇幻</p>
+					<p class="text-success">豆瓣详情：<a href="https://movie.douban.com/subject/1291545/">点击查看</a></p>
+				</div>
+			</div> -->
+		</div>
+	</div>
+	<!-- footer -->
+	<footer class="bs-docs-footer">
+  		<div class="container">
+    		<p><a href="https://github.com/zykee/DeadTest"><span class="glyphicon glyphicon-user"></span> Zykee | Movie</a></p>
+    		<p>Built with the movies in <a href="https://movie.douban.com/top250" target="_blank">@douban</a>. Designed by the <a href="https://github.com/zykee">Zykee</a> with the help of <a href="http://v3.bootcss.com/components/">Bootstrap</a> and <a href="http://layer.layui.com/">Layui</a>.</p>
+
+    		<p>本项目源码受 MIT 开源协议保护，文档受 <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a> 开源协议保护。</p>
+		 </div>
+	</footer>
+</body>
+</html>
