@@ -19,7 +19,7 @@ homework for 计算机网络
 
 - CSS框架：[Boostrap](http://getbootstrap.com/)
 
-- 测试框架：[Jasmine](https://jasmine.github.io/pages/getting_started.html)
+- 测试框架：无
 ### 服务端
 - API服务器：[Express.js](https://expressjs.com/en/starter/installing.html)
 
