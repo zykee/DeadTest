@@ -1,7 +1,7 @@
 # DeadTest
 homework for 计算机网络 
 ## 浏览地址 
-[zykee.net](http://123.56.7.173)
+[http://123.56.7.173](http://123.56.7.173)
 ## 运行方法
 ```
 1. 环境需要：node.js  mongodb
@@ -13,6 +13,21 @@ homework for 计算机网络
 `monogimport -d movies -c types --type csv --headerline --file types.dat` 导入表types
 6. `node app.js`
 ```
+## 技术选型
+### 客户端
+- Javascript库：[jQuery](http://jquery.com/)
+
+- CSS框架：[Boostrap](http://getbootstrap.com/)
+
+- 测试框架：[Jasmine](https://jasmine.github.io/pages/getting_started.html)
+### 服务端
+- API服务器：[Express.js](https://expressjs.com/en/starter/installing.html)
+
+- ODM（数据关系模型）框架：[moogoose](http://mongoosejs.com/docs/guide.html)
+
+- 数据库：[Mongodb](http://www.mongodb.org.cn/)
+
+- 测试框架：无
 ## 目录
 ```
 │  app.js                   // 入口以及后台api
