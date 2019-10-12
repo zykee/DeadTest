@@ -1,7 +1,7 @@
 # DeadTest
 homework for 计算机网络 
 ## 浏览地址 
-[http://123.56.7.173](http://123.56.7.173)
+無
 ## 运行方法
 ```
 1. 环境需要：node.js  mongodb
